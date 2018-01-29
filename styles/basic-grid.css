@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    "header header"
+    "sidebar article"
+    "footer footer";
+}
+
+.main-header, .main-footer {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.main-header {
+  grid-area: header;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.sidebar {
+  background-color: #ddd;
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: article;
+}
+
+.main-header, .main-footer, .sidebar, .main {
+  padding: 20px;
+}
